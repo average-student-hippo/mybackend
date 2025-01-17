@@ -44,7 +44,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `http://localhost:3000/activation/${activationToken}`;
+    const activationUrl = `https://africo-dev.onrender.com/activation/${activationToken}`;
 
     // send email to user
     try {
